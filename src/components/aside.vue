@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import iframeMsgSDK from '../iframeMsgSDK.js';
+// import iframeMsgSDK from '../iframeMsgSDK.js';
 
 export default {
   name: '',
@@ -18,9 +18,9 @@ export default {
 
   },
   mounted() {
-    iframeMsgSDK.beforeBark = function() {
+    // iframeMsgSDK.beforeBark = function() {
 
-    }
+    // }
     // window.addEventListener('message', messageEvent => {
     //   let data = messageEvent.data;
     //   console.log('aside iframeSDK message', data);
@@ -53,5 +53,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.aside_container {
+  width: 80px;
+  background-color: red;
+  /* padding-top: 60px; */
+  /* height: 100%; */
+}
 </style>

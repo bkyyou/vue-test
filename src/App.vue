@@ -45,4 +45,9 @@ export default {
   width: 1280px;
   height: 960px;
 }
+
+/* 100px == 1rem */
+/* html {
+  font-size: calc(200vw/7.5);
+} */
 </style>

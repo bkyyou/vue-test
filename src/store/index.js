@@ -6,7 +6,8 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
-    count: 0
+    count: 0,
+    token: 1
   },
   getters: {
     getCount(state) {
@@ -14,6 +15,9 @@ const store = new Vuex.Store({
       let { count } = state;
       console.log('count', count);
       return ++count;
+    },
+    getToken() {
+      
     }
   },
   mutations: {

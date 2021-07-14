@@ -1,9 +1,13 @@
 <template>
  <div class="home_container">
-    <my-aside></my-aside>
     <my-header></my-header>
     <!-- <iframe id="iframe1" src="/#/iframePage" frameborder="0"></iframe> -->
-    <router-view></router-view>
+    <div class="home">
+      <my-aside></my-aside>
+      <div class="content">
+        <router-view></router-view>
+      </div>
+    </div>
  </div>
 </template>
 
@@ -31,4 +35,19 @@ export default {
 </script>
 
 <style>
+.home_container {
+  display: flex;
+  /* padding-top: 60px; */
+  width: 100%;
+  height: 100%;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+.home {
+  flex: 1;
+  display: flex;
+}
+.content {
+  flex: 1;
+}
 </style>
